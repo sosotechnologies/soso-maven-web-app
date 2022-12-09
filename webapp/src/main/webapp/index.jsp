@@ -1,22 +1,15 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=US-ASCII"
+    pageEncoding="US-ASCII"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Node.js with MongoDB(mLab)</title>
-<link rel=”stylesheet” type=”text/css” href=”//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css” />
-<script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type=”text/javascript” src=”//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js”></script>
-<link rel=”stylesheet” type=”text/css” href=”/stylesheets/main.css” />
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>First JSP</title>
 </head>
+<%@ page import="java.util.Date" %>
 <body>
-<form method=”post” action=”/addArticle” id=”user-form”>
-<input type=”text” name=”title” placeholder=” Enter article title…” required maxlength=”30">
-<textarea name=”articleText” rows=”10" cols=”100" form=”user-form” placeholder=” Enter article text here, maximum number of characters is 400…”
-maxlength=”400" required></textarea>
-<input type=”text” name=”fullName” placeholder=”Enter first and last name…” required maxlength=”30">
-<input type=”submit” value=”Add article to DB” class=”btn btn-primary”>
-</form>
-<form action=”/articles” method=”get”>
-<input type=”submit” value=”Show five articles from DB” class=”btn btn-primary”>
-</form>
+<h3>Hi Pankaj</h3><br>
+<strong>Current Time is</strong>: <%=new Date() %>
+
 </body>
 </html>
