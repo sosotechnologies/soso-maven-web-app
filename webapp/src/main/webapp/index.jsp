@@ -1,37 +1,22 @@
-<form action="action_page.php">
-  <div class="container">
-    <h1>New: Register for SosoTech DevOps Master Course </h1>
-    <p>Enter your credentials.</p>
-    <hr>
-     
-    <label for="Name"><b>Name</b></label>
-    <input type="text" placeholder="Full Name" name="Name" id="Name" required>
-    <br>
-    
-    <label for="mobile"><b>Mobile</b></label>
-    <input type="text" placeholder="Moible number" name="mobile" id="mobile" required>
-    <br>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Email" name="email" id="email" required>
-    <br>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Password" name="psw" id="psw" required>
-    <br>
-
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-    <hr>
-    <br>
-    <p>Please read and agree to our <a href="#">Terms & Privacy</a>.</p>
-    <button type="submit" class="registerbtn">Register</button>
-  </div>
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
-
-   <h1> Happy Learning! </h1>
-
-  
+<!DOCTYPE html>
+<html>
+<head>
+<title>Node.js with MongoDB(mLab)</title>
+<link rel=”stylesheet” type=”text/css” href=”//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css” />
+<script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type=”text/javascript” src=”//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js”></script>
+<link rel=”stylesheet” type=”text/css” href=”/stylesheets/main.css” />
+</head>
+<body>
+<form method=”post” action=”/addArticle” id=”user-form”>
+<input type=”text” name=”title” placeholder=” Enter article title…” required maxlength=”30">
+<textarea name=”articleText” rows=”10" cols=”100" form=”user-form” placeholder=” Enter article text here, maximum number of characters is 400…”
+maxlength=”400" required></textarea>
+<input type=”text” name=”fullName” placeholder=”Enter first and last name…” required maxlength=”30">
+<input type=”submit” value=”Add article to DB” class=”btn btn-primary”>
 </form>
+<form action=”/articles” method=”get”>
+<input type=”submit” value=”Show five articles from DB” class=”btn btn-primary”>
+</form>
+</body>
+</html>
